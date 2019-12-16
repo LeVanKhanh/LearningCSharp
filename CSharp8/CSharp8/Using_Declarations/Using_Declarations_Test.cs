@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace CSharp8.Using_Declarations
 {
@@ -15,7 +16,7 @@ namespace CSharp8.Using_Declarations
                 "Four"
             };
             string fileName = "fileName";
-            FileHelper.WriteLinesToFile(lines, fileName);
+            Console.WriteLine(FileHelper.WriteLinesToFile(lines, fileName));
             FileHelper.ReadFile(fileName);
             FileHelper.DeleteFile(fileName);
         }

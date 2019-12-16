@@ -18,6 +18,9 @@ namespace CSharp8
                 Console.WriteLine(TestName.DEFAULT_INTERFACE_METHODS);
                 Console.WriteLine(TestName.READONLY_MEMBERS);
                 Console.WriteLine(TestName.SWITCH_EXPRESSIONS);
+                Console.WriteLine(TestName.PROPERTY_PATTERNS);
+                Console.WriteLine(TestName.TUPLE_PATTERNS);
+                Console.WriteLine(TestName.USING_DECLARATIONS);
                 Console.WriteLine("Please enter test Name");
                 var testName = Console.ReadLine();
                 var testFactory = new TestFactory();

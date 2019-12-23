@@ -21,6 +21,8 @@ namespace CSharp8
                 Console.WriteLine(TestName.PROPERTY_PATTERNS);
                 Console.WriteLine(TestName.TUPLE_PATTERNS);
                 Console.WriteLine(TestName.USING_DECLARATIONS);
+                Console.WriteLine(TestName.POSITIONAL_PATTERNS);
+                Console.WriteLine(TestName.STATIC_LOCAL_FUNCTION);
                 Console.WriteLine("Please enter test Name");
                 var testName = Console.ReadLine();
                 var testFactory = new TestFactory();

@@ -12,6 +12,8 @@ namespace CSharp8
             TestName.PROPERTY_PATTERNS => new Property_Patterns.Property_Patterns_Test(),
             TestName.TUPLE_PATTERNS => new Tuple_Patterns.Tuple_Patterns_Test(),
             TestName.USING_DECLARATIONS => new Using_Declarations.Using_Declarations_Test(),
+            TestName.POSITIONAL_PATTERNS => new Positional_Patterns.Positional_Patterns_Test(),
+            TestName.STATIC_LOCAL_FUNCTION => new Static_Local_Functions.Static_Local_Functions_Test(),
             _ => throw new ArgumentException(message: "invalid test name", paramName: nameof(testName)),
         };
     }

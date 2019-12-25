@@ -5,6 +5,12 @@ namespace CSharp8.Readonly_Members
     public class ClassExample
     {
         public Dictionary<string, int> _store;
+
+        public ClassExample()
+        {
+            _store = new Dictionary<string, int>();
+        }
+
         //public int Prop1
         //{
         //    readonly get

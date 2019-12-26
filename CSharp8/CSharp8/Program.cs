@@ -23,6 +23,9 @@ namespace CSharp8
                 Console.WriteLine(TestName.USING_DECLARATIONS);
                 Console.WriteLine(TestName.POSITIONAL_PATTERNS);
                 Console.WriteLine(TestName.STATIC_LOCAL_FUNCTION);
+                Console.WriteLine(TestName.ASYNCHRONOUS_STREAMS);
+                Console.WriteLine(TestName.INDICES_AND_RANGES);
+                Console.WriteLine(TestName.NULL_COALESCING_ASSIGNMENT);
                 Console.WriteLine("Please enter test Name");
                 var testName = Console.ReadLine();
                 var testFactory = new TestFactory();

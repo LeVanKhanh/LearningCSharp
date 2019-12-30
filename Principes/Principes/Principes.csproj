@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Interface_Segregation\" />
+    <Folder Include="Dependency_Inversion\" />
+    <Folder Include="Single_Responsibility\" />
+    <Folder Include="Open_Closed\" />
+  </ItemGroup>
+
+</Project>

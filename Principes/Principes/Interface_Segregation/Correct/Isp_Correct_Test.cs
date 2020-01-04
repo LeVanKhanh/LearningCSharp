@@ -1,6 +1,6 @@
 ﻿namespace Principes.Interface_Segregation.Correct
 {
-    public class Isp_Correct_Test
+    public class Isp_Correct_Test: ITest
     {
         public void Test()
         {

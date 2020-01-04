@@ -1,6 +1,6 @@
 ﻿namespace Principes.Dependency_Inversion.Correct
 {
-    public class Dip_Correct_Test
+    public class Dip_Correct_Test: ITest
     {
         public void Test()
         {

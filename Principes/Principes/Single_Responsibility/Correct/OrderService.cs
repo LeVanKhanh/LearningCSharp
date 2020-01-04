@@ -13,18 +13,23 @@ namespace Principes.Single_Responsibility.Correct
             _dBContext = dBContext;
         }
 
-        public int Create(Order order)
+        public int CreateWithoutValidate(Order order)
+        {
+            _dBContext.Add(order);
+            return _dBContext.SaveChange();
+        }
+
+        public int ValidateThenCreate(Order order)
         {
             string messages;
             if (!IsValid(order, out messages))
             {
                 throw new Exception(messages);
             }
-            _dBContext.Add(order);
-            return _dBContext.SaveChange();
+            return CreateWithoutValidate(order);
         }
 
-        private bool IsValid(Order order, out string messages)
+        public static bool IsValid(Order order, out string messages)
         {
             if (order == null)
             {

@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Single_Responsibility\" />
     <Folder Include="Open_Closed\" />
   </ItemGroup>
 

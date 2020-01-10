@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Open_Closed\" />
     <Folder Include="Interface_Segregation\" />
     <Folder Include="Dependency_Inversion\" />
     <Folder Include="Single_Responsibility\" />

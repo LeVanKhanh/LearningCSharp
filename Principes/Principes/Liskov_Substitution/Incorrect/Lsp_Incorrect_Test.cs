@@ -2,7 +2,7 @@
 
 namespace Principes.Liskov_Substitution.Incorrect
 {
-    public class Lsp_Incorrect_Test
+    public class Lsp_Incorrect_Test : ITest
     {
         public void Test()
         {

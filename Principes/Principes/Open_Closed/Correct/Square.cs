@@ -4,7 +4,7 @@
     {
         public int Sides;
 
-        public override int Area()
+        public override double Area()
         {
             return Sides * Sides;
         }

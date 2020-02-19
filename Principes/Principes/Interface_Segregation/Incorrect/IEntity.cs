@@ -2,7 +2,7 @@
 {
     public interface IEntity
     {
-        public int Id { get; set; }
-        public bool IsDeleted { get; set; }
+        int Id { get; set; }
+        bool IsDeleted { get; set; }
     }
 }

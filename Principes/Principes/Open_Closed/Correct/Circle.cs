@@ -1,4 +1,6 @@
-﻿namespace Principes.Open_Closed.Correct
+﻿using System;
+
+namespace Principes.Open_Closed.Correct
 {
     public class Circle: Shape
     {

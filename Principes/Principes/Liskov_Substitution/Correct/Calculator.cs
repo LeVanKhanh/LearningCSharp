@@ -1,8 +1,5 @@
-﻿namespace Principes.Liskov_Substitution.Incorrect
+﻿namespace Principes.Liskov_Substitution.Correct
 {
-    /// <summary>
-    /// Calculate Area
-    /// </summary>
     public static class Calculator
     {
         public static double Area(params Rectangle[] shapes)

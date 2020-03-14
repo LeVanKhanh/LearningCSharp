@@ -6,13 +6,18 @@ namespace Principes.Liskov_Substitution.Incorrect
     {
         public void Test()
         {
-            Rectangle rectangle = new Square();
-            rectangle.Width = 10;
-            rectangle.Height = 5;
+            Rectangle rectangle = new Rectangle();
+            rectangle.Width = 3;
+            rectangle.Height = 4;
 
-            // Expected 10*5 = 50;
-            // Result is 5 * 5 = 25;
-            Console.WriteLine(Calculator.Area(rectangle));
+            //Rectangle class couldn't replaced by class Square
+            //We set Width = 3; Height = 4
+            //But Area = 0
+            Rectangle square = new Square();
+            square.Width = 3;
+            square.Height = 4;
+
+            Console.WriteLine("Total Rectangle Area: " + Calculator.Area(rectangle, square));
         }
     }
 }

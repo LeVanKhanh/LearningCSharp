@@ -1,34 +1,11 @@
 ﻿namespace Principes.Liskov_Substitution.Incorrect
 {
-    public class Square: Rectangle
+    public class Square : Rectangle
     {
-        private int _height;
-        private int _width;
-
-        public override int Height
+        public double Side { get; set; }
+        public override double Area()
         {
-            get
-            {
-                return _height;
-            }
-            set
-            {
-                _height = value;
-                _width = value;
-            }
-        }
-
-        public override int Width
-        {
-            get
-            {
-                return _width;
-            }
-            set
-            {
-                _width = value;
-                _height = value;
-            }
+            return Side * Side;
         }
     }
 }

@@ -5,6 +5,10 @@ using System.Linq;
 
 namespace Principes.Single_Responsibility.Correct
 {
+    /// <summary>
+    /// Simple Order Service
+    /// Separate Validation and Creation
+    /// </summary>
     public class OrderService
     {
         private readonly IDBContext _dBContext;
@@ -29,6 +33,12 @@ namespace Principes.Single_Responsibility.Correct
             return CreateWithoutValidate(order);
         }
 
+        /// <summary>
+        /// Validate Order
+        /// </summary>
+        /// <param name="order"></param>
+        /// <param name="messages"></param>
+        /// <returns></returns>
         public static bool IsValid(Order order, out string messages)
         {
             if (order == null)

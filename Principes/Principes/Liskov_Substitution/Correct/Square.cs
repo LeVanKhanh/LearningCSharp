@@ -1,12 +1,12 @@
 ﻿namespace Principes.Liskov_Substitution.Correct
 {
-    public class Square: Shape
+    public class Square : Rectangle
     {
-        public int Sides;
-
-        public override int Area()
+        public Square(double side) : base(side, side)
         {
-            return Sides * Sides;
+
         }
+
+        public double Side { get; private set; }
     }
 }

@@ -1,9 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Principes.Single_Responsibility.Incorrect
 {
+    /// <summary>
+    /// Simple order model
+    /// </summary>
     public class Order
     {
         public int Id { get; set; }

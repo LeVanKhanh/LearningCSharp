@@ -2,6 +2,9 @@
 
 namespace Principes.Single_Responsibility.Correct
 {
+    /// <summary>
+    /// Simple Order Model
+    /// </summary>
     public class Order
     {
         public int Id { get; set; }

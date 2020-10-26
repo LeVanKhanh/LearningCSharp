@@ -4,9 +4,9 @@
     {
         public void Test()
         {
-            var station = new Repository<Station>();
+            var station = new StationRepository();
             station.Delete(new Station());
-            var stationOffice = new Repository<StationOffice>();
+            var stationOffice = new StationOfficeRepository();
             stationOffice.Delete(new StationOffice());
         }
     }

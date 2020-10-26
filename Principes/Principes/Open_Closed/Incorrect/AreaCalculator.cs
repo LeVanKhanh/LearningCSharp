@@ -1,11 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Principes.Open_Closed.Incorrect
 {
+    /// <summary>
+    /// Calculate Area
+    /// </summary>
     public class AreaCalculator
     {
+        /// <summary>
+        /// Sum Area of shapes
+        /// With this code, if we add more type of shape we have to modify it(add more conditions).
+        /// </summary>
+        /// <param name="shapes"></param>
+        /// <returns></returns>
         public double Area(object[] shapes)
         {
             double area = 0;

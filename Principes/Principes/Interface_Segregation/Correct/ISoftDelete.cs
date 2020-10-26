@@ -1,6 +1,9 @@
 ﻿namespace Principes.Interface_Segregation.Correct
 {
-    public interface ISoftDelete
+    /// <summary>
+    /// Interface for entities need to implement SoftDelete
+    /// </summary>
+    public interface ISoftDelete : IEntity
     {
         bool IsDeleted { get; set; }
     }

@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Principes.Liskov_Substitution.Incorrect
+﻿namespace Principes.Liskov_Substitution.Incorrect
 {
     public class Rectangle
     {
-        public virtual int Height { get; set; }
-        public virtual int Width { get; set; }
+        public double Height { get; set; }
+        public double Width { get; set; }
+        public virtual double Area()
+        {
+            return Height * Width;
+        }
     }
 }

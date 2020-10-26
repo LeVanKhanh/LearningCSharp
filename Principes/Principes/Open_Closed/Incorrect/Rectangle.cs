@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Principes.Open_Closed.Incorrect
+﻿namespace Principes.Open_Closed.Incorrect
 {
     public class Rectangle
     {

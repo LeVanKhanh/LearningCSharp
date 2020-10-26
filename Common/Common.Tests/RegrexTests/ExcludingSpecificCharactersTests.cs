@@ -39,25 +39,15 @@ namespace Common.Tests.RegrexTests
             Assert.False(isValidWithSpecicalChartInTheMidle);
         }
 
-        [Theory]
-        [InlineData(")")]
-        [InlineData("(")]
-        [InlineData("}")]
-        [InlineData("{")]
-        [InlineData("%")]
-        [InlineData("-")]
-        [InlineData(".")]
-        [InlineData("`")]
-        public void Excluding_ExcludeRegrexCharacters_Invalid(string text)
+        [Fact]
+        public void Excluding_ExcludeRegrexCharacters_ValidText()
         {
             var excludingSpecificCharacters = new Excluding();
-            string normalText = "abcdefghijklmnopqrstuvwxyz";
-            var isValidWithSpecialChartAtTheEnd = excludingSpecificCharacters.ExcludeRegrexCharacters($"{normalText} {text}");
-            var isValidWithSpecicalChartAtTheStart = excludingSpecificCharacters.ExcludeRegrexCharacters($"{text} {normalText}");
-            var isValidWithSpecicalChartInTheMidle = excludingSpecificCharacters.ExcludeRegrexCharacters($"{normalText} {text} {normalText}");
-            Assert.True(isValidWithSpecialChartAtTheEnd);
-            Assert.True(isValidWithSpecicalChartAtTheStart);
-            Assert.True(isValidWithSpecicalChartInTheMidle);
+            string normalText = "abcdefghijklmnopqrstuvwxyz(){}%-_.`";
+            var isValidWithLowerCase = excludingSpecificCharacters.ExcludeRegrexCharacters(normalText);
+            var isValidWithUpperCase = excludingSpecificCharacters.ExcludeRegrexCharacters(normalText.ToUpper());
+            Assert.True(isValidWithLowerCase);
+            Assert.True(isValidWithUpperCase);
         }
     }
 }
